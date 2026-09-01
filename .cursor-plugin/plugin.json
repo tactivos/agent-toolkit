@@ -1,0 +1,25 @@
+{
+  "name": "mural",
+  "displayName": "Mural",
+  "version": "0.1.0",
+  "description": "Create and edit Mural boards from Cursor — murals, widgets, templates, and workspaces.",
+  "author": {
+    "name": "Mural",
+    "email": "TODO@mural.co"
+  },
+  "homepage": "https://github.com/tactivos/agent-toolkit",
+  "repository": "https://github.com/tactivos/agent-toolkit",
+  "license": "MIT",
+  "category": "integrations",
+  "keywords": [
+    "mural",
+    "whiteboard",
+    "collaboration",
+    "canvas",
+    "visual-collaboration",
+    "diagramming"
+  ],
+  "tags": ["mcp", "collaboration", "whiteboard", "mural"],
+  "logo": "assets/logo.svg",
+  "mcpServers": "./.mcp.json"
+}
