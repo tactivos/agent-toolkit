@@ -2,7 +2,7 @@
   <a href="https://www.mural.co">
     <img src="assets/logo.svg" width="96" alt="Mural" />
   </a>
-  <h1 align="center">Mural AI Manifests</h1>
+  <h1 align="center">Agent Toolkit</h1>
 </p>
 
 Plugin manifests that connect AI agents to [Mural](https://www.mural.co) through Mural's
