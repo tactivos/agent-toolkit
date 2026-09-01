@@ -90,6 +90,3 @@ against the live server.
 - Docs: https://developers.mural.co
 - Issues: https://github.com/tactivos/agent-toolkit/issues
 
-## License
-
-MIT
