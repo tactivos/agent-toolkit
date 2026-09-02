@@ -2,7 +2,7 @@
   "name": "mural",
   "displayName": "Mural",
   "version": "0.1.0",
-  "description": "Create and edit Mural boards from Cursor — murals, widgets, templates, and workspaces.",
+  "description": "Edit and create Mural content from Cursor",
   "author": {
     "name": "Mural",
     "email": "support@mural.co"

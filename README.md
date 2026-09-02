@@ -5,28 +5,21 @@
   <h1 align="center">Agent Toolkit</h1>
 </p>
 
-Plugin manifests that connect AI agents to [Mural](https://www.mural.co) through Mural's
-remote [Model Context Protocol](https://modelcontextprotocol.io) server.
-
-This repository contains configuration only — the MCP server itself is hosted by Mural at
-`https://mcp-canvas.mural.co/mcp`.
+Connect AI agents to [Mural](https://www.mural.co).
 
 ---
 
 ## Features
 
-- **MCP server** — create and edit murals, place and update widgets, apply templates, and
-  search workspaces directly from your agent.
-- **Cursor plugin** — available on the Cursor Marketplace.
-- **Agent Plugin** — the root `plugin.json` follows the vendor-neutral
-  [Agent Plugins](https://agent-plugins.org) standard, so the same repo can serve other
-  compatible clients as we add them.
+- **Mural MCP server** — Edit your murals and create new content directly from your agent.
+- **Cursor plugin** — Available on the Cursor Marketplace.
+- **Agent Plugin** — the root `plugin.json` follows the vendor-neutral [Agent Plugins](https://agent-plugins.org) standard.
 
 ---
 
 ## Install
 
-### Cursor
+### Cursor plugin
 
 1. Open **Cursor Settings → Plugins**.
 2. Search for **Mural**.
@@ -34,41 +27,11 @@ This repository contains configuration only — the MCP server itself is hosted 
 
 Or run `/add-plugin mural` in chat.
 
-### Any MCP client
-
-Point your client at the remote server:
-
-```json
-{
-  "mcpServers": {
-    "Mural": {
-      "type": "http",
-      "url": "https://mcp-canvas.mural.co/mcp"
-    }
-  }
-}
-```
-
 ---
 
 ## Authentication
 
-The server uses OAuth. There are no tokens or API keys to configure — on first connect your
-client opens a browser, you sign in with your Mural account, and the agent then acts as you.
-Access is scoped to the workspaces and murals your Mural user can already reach.
-
----
-
-## Repository layout
-
-```
-.
-├── plugin.json            # Agent Plugin manifest (portable standard)
-├── mcp.json               # Agent Plugin MCP config (streamable-http)
-├── .mcp.json              # MCP config for Cursor (http)
-├── .cursor-plugin/        # Cursor manifest
-└── assets/                # Logo
-```
+Mural MCP uses OAuth. There are no tokens or API keys to configure — on first connect your client opens a browser, you sign in with your Mural account, and the agent then acts on your behalf. Access is scoped to the murals your Mural user can already reach.
 
 ---
 
@@ -76,17 +39,12 @@ Access is scoped to the workspaces and murals your Mural user can already reach.
 
 To test the plugin before submitting:
 
+#### Cursor
+
 ```bash
 cp -R . ~/.cursor/plugins/local/mural
 ```
 
-Restart Cursor, then confirm the plugin appears under **Customize** and its tools resolve
-against the live server.
+Restart Cursor, then confirm the plugin appears under **Customize** and its tools resolve against the live server.
 
----
-
-## Support
-
-- Docs: https://developers.mural.co
-- Issues: https://github.com/tactivos/agent-toolkit/issues
 
