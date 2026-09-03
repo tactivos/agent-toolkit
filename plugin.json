@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mural",
+  "version": "0.1.0",
+  "description": "Create and edit Mural boards from your agent",
+  "author": {
+    "name": "Mural",
+    "email": "support@mural.co",
+    "url": "https://www.mural.co"
+  },
+  "homepage": "https://github.com/tactivos/agent-toolkit",
+  "repository": "https://github.com/tactivos/agent-toolkit",
+  "keywords": [
+    "mural",
+    "whiteboard",
+    "collaboration",
+    "canvas",
+    "visual-collaboration",
+    "diagramming"
+  ]
+}
