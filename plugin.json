@@ -1,7 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mural",
-  "displayName": "Mural",
   "version": "0.1.0",
   "description": "Create and edit Mural boards from your agent",
   "author": {
@@ -18,7 +17,5 @@
     "canvas",
     "visual-collaboration",
     "diagramming"
-  ],
-  "logo": "assets/logo.svg",
-  "mcpServers": "./mcp.json"
+  ]
 }

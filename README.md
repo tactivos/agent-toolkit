@@ -29,6 +29,23 @@ Or run `/add-plugin mural` in chat.
 
 ---
 
+## Any MCP client
+
+Point your client at the remote server:
+
+```json
+{
+  "mcpServers": {
+    "Mural": {
+      "type": "http",
+      "url": "https://mcp-canvas.mural.co/mcp"
+    }
+  }
+}
+```
+
+---
+
 ## Authentication
 
 Mural MCP uses OAuth. There are no tokens or API keys to configure — on first connect your client opens a browser, you sign in with your Mural account, and the agent then acts on your behalf. Access is scoped to the murals your Mural user can already reach.
