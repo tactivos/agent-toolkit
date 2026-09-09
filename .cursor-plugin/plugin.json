@@ -2,7 +2,7 @@
   "name": "mural",
   "displayName": "Mural",
   "version": "0.1.0",
-  "description": "Edit and create Mural content from Cursor",
+  "description": "Create, read, and edit Mural boards from your agent. Turn information into shared visual work.",
   "author": {
     "name": "Mural",
     "email": "support@mural.co"
@@ -19,6 +19,6 @@
     "diagramming"
   ],
   "tags": ["mcp", "collaboration", "whiteboard", "mural"],
-  "logo": "assets/logo.svg",
-  "mcpServers": "./.mcp.json"
+  "logo": "assets/mural-logo.png",
+  "mcpServers": "./mcp.json"
 }
