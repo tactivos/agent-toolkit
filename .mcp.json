@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "Mural": {
-      "type": "http",
-      "url": "https://mcp-canvas.mural.co/mcp"
-    }
-  }
-}
