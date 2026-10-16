@@ -13,6 +13,7 @@ Connect AI agents to [Mural](https://www.mural.co).
 
 - **Mural MCP server** — Edit your murals and create new content directly from your agent by connecting via one of the plugins below. Canonical server address in `mcp.json`.
 - **Cursor plugin** — Available on the Cursor Marketplace.
+- **Claude plugin** — `.claude-plugin/plugin.json` uses the same `mcp.json`. Not yet listed in the Claude directory.
 - **Agent Plugin** — the root `plugin.json` follows the vendor-neutral [Agent Plugins](https://agent-plugins.org) standard.
 
 ---
@@ -47,6 +48,15 @@ rsync -a --delete --exclude .git ./ ~/.cursor/plugins/local/mural/
 
 Restart Cursor, then confirm the plugin appears under **Customize** and its tools resolve against the live server.
 
+#### Claude Code
+
+```bash
+claude plugin validate .
+claude --plugin-dir .
+```
+
+Run `/mcp`, authenticate the plugin's `Mural` server, then confirm its tools resolve against the live server.
+
 ---
 
 ## Troubleshooting
@@ -56,3 +66,9 @@ Restart Cursor, then confirm the plugin appears under **Customize** and its tool
 If the plugin loads and lists its MCP server, but no **Authenticate** link appears and nothing
 connects, check whether you already have the same server URL configured as a personal MCP server
 in `~/.cursor/mcp.json`.
+
+### Claude Code doesn't show the plugin's server
+
+If Mural is already connected to your Claude account as a connector, Claude Code hides the
+plugin's copy of the same server and uses the connector, so you only see one set of Mural tools.
+To test the plugin's own server, disconnect the Mural connector first.
