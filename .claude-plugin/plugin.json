@@ -9,6 +9,7 @@
   },
   "homepage": "https://github.com/tactivos/agent-toolkit",
   "repository": "https://github.com/tactivos/agent-toolkit",
+  "privacyPolicyUrl": "https://www.mural.co/terms/privacy-statement",
   "keywords": [
     "mural",
     "whiteboard",
@@ -17,5 +18,6 @@
     "visual-collaboration",
     "diagramming"
   ],
+  "icon": "./assets/mural-logo.png",
   "mcpServers": "./mcp.json"
 }
