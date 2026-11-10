@@ -1,7 +1,7 @@
 {
   "name": "mural",
   "displayName": "Mural",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Create, read, and edit Mural boards from your agent. Turn information into shared visual work.",
   "author": {
     "name": "Mural",
