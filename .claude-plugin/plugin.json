@@ -19,5 +19,5 @@
     "diagramming"
   ],
   "icon": "./assets/mural-logo.png",
-  "mcpServers": "./mcp.json"
+  "mcpServers": "./.mcp.json"
 }
