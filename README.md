@@ -13,7 +13,7 @@ Connect AI agents to [Mural](https://www.mural.co).
 
 - **Mural MCP server** — Edit your murals and create new content directly from your agent by connecting via one of the plugins below. Canonical server address in `mcp.json`.
 - **Cursor plugin** — Available on the Cursor Marketplace.
-- **Claude plugin** — `.claude-plugin/plugin.json` uses the same `mcp.json`. Not yet listed in the Claude directory.
+- **Claude plugin** — `.claude-plugin/plugin.json` reads the server from `.mcp.json`. Not yet listed in the Claude directory.
 - **Agent Plugin** — the root `plugin.json` follows the vendor-neutral [Agent Plugins](https://agent-plugins.org) standard.
 
 ---
@@ -27,6 +27,21 @@ Connect AI agents to [Mural](https://www.mural.co).
 3. Click **Install**, then complete the Mural sign-in prompt in your browser.
 
 Or run `/add-plugin mural` in chat.
+
+---
+
+## MCP config files
+
+The same server is declared in two files, because clients expect different formats:
+
+| File        | Read by                                      | Transport `type`  |
+| ----------- | -------------------------------------------- | ----------------- |
+| `mcp.json`  | Cursor plugin, Agent Plugins standard        | `streamable-http` |
+| `.mcp.json` | Claude plugin (`.claude-plugin/plugin.json`) | `http`            |
+
+Claude accepts only `http`, `sse`, or `ws` as a remote server `type`, and its plugin directory
+allows only a fixed set of fields in this file, so `.mcp.json` carries no `$schema` key.
+If the server address changes, update both files.
 
 ---
 
