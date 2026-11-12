@@ -12,6 +12,7 @@ Connect AI agents to [Mural](https://www.mural.co).
 ## Features
 
 - **Mural MCP server** — Edit your murals and create new content directly from your agent by connecting via one of the plugins below. Canonical server address in `mcp.json`.
+- **Skills** — The plugins bundle skills in `skills/` that teach your agent how to find the right mural, apply Mural templates, lay out boards the way Mural's own templates do, and recover from tool errors. They are the same guides the Mural MCP server serves.
 - **Cursor plugin** — Available on the Cursor Marketplace.
 - **Claude plugin** — `.claude-plugin/plugin.json` uses the same `mcp.json`. Not yet listed in the Claude directory.
 - **Agent Plugin** — the root `plugin.json` follows the vendor-neutral [Agent Plugins](https://agent-plugins.org) standard.
